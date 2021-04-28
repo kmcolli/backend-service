@@ -2,5 +2,5 @@ resources:
 - deployment.yaml
 - service.yaml
 commonLabels:
-  app.kubernetes.io/part-of: frontend-app
-  app.kubernetes.io/name: frontend-app
+  app.kubernetes.io/part-of: backend-app
+  app.kubernetes.io/name: backend-app

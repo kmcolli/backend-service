@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-app
+  name: backend-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: frontend-app
-      app.kubernetes.io/part-of: frontend-app
+      app.kubernetes.io/name: backend-app
+      app.kubernetes.io/part-of: backend-app
       app.kubernetes.io/version: 0.0.1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: frontend-app
-        app.kubernetes.io/part-of: frontend-app
+        app.kubernetes.io/name: backend-app
+        app.kubernetes.io/part-of: backend-app
         app.kubernetes.io/version: 0.0.1
     spec:
       containers:
-      - name: frontend-app
-        image: quay.io/isequeir/frontend-service:v1.0.0
+      - name: backend-app
+        image: quay.io/isequeir/backend-service:v1.0.0
         imagePullPolicy: Always
         volumeMounts:
         - name: web-files
