@@ -1,6 +1,4 @@
 resources:
-- deployment.yaml
-- service.yaml
-commonLabels:
-  app.kubernetes.io/part-of: backend-app
-  app.kubernetes.io/name: backend-app
+- 100-deployment.yaml
+- 200-service.yaml
+- 300-route.yaml
