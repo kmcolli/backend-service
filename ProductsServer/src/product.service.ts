@@ -11,9 +11,7 @@ export  class ProductsService {
         this.products = [];
         this.products.push(generateRandomProduct());
      }
-    // constructor() {
-    //     this.getProducts();
-    // }
+
     public static getInstance(): ProductsService {
         if (!ProductsService.instance) {
             ProductsService.instance = new ProductsService();
