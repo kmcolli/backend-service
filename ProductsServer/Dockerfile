@@ -8,7 +8,7 @@ COPY . /app
 RUN npm run build
 
 # # Expose the port the app runs in
-EXPOSE 8080
+EXPOSE 4201
 
 # Serve the app
 CMD ["npm", "start"]
