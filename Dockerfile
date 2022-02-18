@@ -10,6 +10,7 @@ RUN npm run build
 # # Expose the port the app runs in
 EXPOSE 8080
 
+
 # Serve the app
 CMD ["npm", "start"]
 # # Stage 2
